@@ -79,7 +79,7 @@ operating optimization.
     - [Priority 6 — Economic optimization](#priority-6-economic-optimization)
     - [Priority 7 — Digital engineering interface](#priority-7-digital-engineering-interface)
 - [👤 Author](#-author)
-
+- [License](#license)
 ---
 
 ## Project Overview
@@ -916,6 +916,14 @@ The next level of the project would move from a transparent screening model towa
 IIT Guwahati  
 Chemical Engineering
 
-GitHub: `abhi-iitg`
+- **Email : mr.abhishekaaa@gmail.com**
+- **[Portfolio]()**
+- **[LinkedIn](https://www.linkedin.com/in/abhishekkumargond/)**
+
+---
+
+## License
+
+Released under the [MIT License](LICENSE).
 
 ---
