@@ -46,13 +46,13 @@ operating optimization.
 - [Hydraulic Screening](#hydraulic-screening)
     - [Default screening geometry](#default-screening-geometry)
 - [Compressor Power](#compressor-power)
-- [🚀 Process Optimization](#process-optimization)
+- [🚀 Process Optimization](#-process-optimization)
     - [Reactor temperature](#reactor-temperature)
     - [Thiophene conversion](#thiophene-conversion)
     - [Benzothiophene conversion](#benzothiophene-conversion)
     - [Feasibility constraint](#feasibility-constraint)
     - [Optimization objective](#optimization-objective)
-- [📈 Sensitivity Analysis](#sensitivity-analysis)
+- [📈 Sensitivity Analysis](#-sensitivity-analysis)
     - [Interpretation of the current sensitivity run](#interpretation-of-the-current-sensitivity-run)
 - [Live Interactive Demo](#live-interactive-demo)
     - [Run locally](#run-locally)
@@ -78,7 +78,7 @@ operating optimization.
     - [Priority 5 — Hydrogen system](#priority-5-hydrogen-system)
     - [Priority 6 — Economic optimization](#priority-6-economic-optimization)
     - [Priority 7 — Digital engineering interface](#priority-7-digital-engineering-interface)
-- [👤 Author](#author)
+- [👤 Author](#-author)
 
 ---
 
