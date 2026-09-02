@@ -26,7 +26,7 @@ operating optimization.
     - [Equipment screening](#equipment-screening)
     - [Optimization and analytics](#optimization-and-analytics)
 - [Process Flow](#process-flow)
-- [⚙️ Engineering Methodology](#engineering-methodology)
+- [⚙️ Engineering Methodology](#-engineering-methodology)
 - [Feed Basis](#feed-basis)
     - [Overall feed basis](#overall-feed-basis)
     - [Surrogate feed composition](#surrogate-feed-composition)
