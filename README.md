@@ -46,13 +46,13 @@ operating optimization.
 - [Hydraulic Screening](#hydraulic-screening)
     - [Default screening geometry](#default-screening-geometry)
 - [Compressor Power](#compressor-power)
-- [🚀 Process Optimization](#-process-optimization)
+- [Process Optimization](#process-optimization)
     - [Reactor temperature](#reactor-temperature)
     - [Thiophene conversion](#thiophene-conversion)
     - [Benzothiophene conversion](#benzothiophene-conversion)
     - [Feasibility constraint](#feasibility-constraint)
     - [Optimization objective](#optimization-objective)
-- [📈 Sensitivity Analysis](#-sensitivity-analysis)
+- [Sensitivity Analysis](#sensitivity-analysis)
     - [Interpretation of the current sensitivity run](#interpretation-of-the-current-sensitivity-run)
 - [Live Interactive Demo](#live-interactive-demo)
     - [Run locally](#run-locally)
@@ -69,6 +69,10 @@ operating optimization.
     - [Heat integration](#heat-integration)
     - [Equipment and operations](#equipment-and-operations)
     - [Economics and sustainability](#economics-and-sustainability)
+- [Interview Talking Points](#interview-talking-points)
+    - [Chemical engineering](#chemical-engineering)
+    - [Analytics and optimization](#analytics-and-optimization)
+    - [Strong engineering answer](#strong-engineering-answer)
 - [References](#references)
 - [Future Improvements](#future-improvements)
     - [Priority 1 — Rigorous reaction model](#priority-1-rigorous-reaction-model)
@@ -80,6 +84,7 @@ operating optimization.
     - [Priority 7 — Digital engineering interface](#priority-7-digital-engineering-interface)
 - [👤 Author](#-author)
 - [License](#license)
+- [Engineering takeaway](#engineering-takeaway)
 ---
 
 ## Project Overview
@@ -517,7 +522,7 @@ The resulting value is a **screening estimate**, not a compressor datasheet/desi
 
 ---
 
-# 🚀 Process Optimization
+# Process Optimization
 
 The optimization module performs a deterministic grid search over:
 
@@ -573,7 +578,7 @@ This is a **bounded deterministic grid search**, not a nonlinear mathematical-pr
 
 ---
 
-# 📈 Sensitivity Analysis
+# Sensitivity Analysis
 
 The repository evaluates reactor-temperature sensitivity from:
 
@@ -830,6 +835,36 @@ Accordingly, values such as **annual fuel saving** and **annual CO₂ reduction*
 
 ---
 
+## Interview Talking Points
+
+This project can support discussion around both **chemical engineering** and **analytical decision making**.
+
+### Chemical engineering
+
+- Why is the H₂:N₂ feed ratio 3:1?
+- Why is recycle required?
+- Why is a purge required?
+- Why does electrolysis dominate energy demand?
+- Why does pressure influence ammonia synthesis?
+- What is the role of NH₃ condensation?
+- How would you validate the process in Aspen Plus?
+
+### Analytics and optimization
+
+- Which assumptions dominate LCOA?
+- Why use deterministic grid search?
+- How would you handle uncertainty?
+- How would you introduce a pressure-dependent compressor model?
+- How would you optimize for cost and carbon simultaneously?
+- How would you model renewable intermittency?
+- What would you change before calling this a bankable TEA?
+
+### Strong engineering answer
+
+> "I intentionally separated the transparent screening layer from the rigorous validation layer. The Python model is useful for fast scenario analysis and optimization, while Aspen Plus should be used to validate thermodynamics, recycle convergence, phase behavior and unit-operation duties before treating the results as design-grade."
+
+---
+
 # References
 
 The repository maintains a separate reference landscape in:
@@ -925,5 +960,15 @@ Chemical Engineering
 ## License
 
 Released under the [MIT License](LICENSE).
+
+---
+
+## Engineering takeaway
+
+The central screening insight is straightforward:
+
+> **For green ammonia, the cost and energy story is strongly driven by electricity-intensive hydrogen production.**
+
+The value of this project is not a single "optimal" number. It is the **reproducible chain from engineering assumptions → process balances → energy → economics → emissions → optimization → validation**.
 
 ---
