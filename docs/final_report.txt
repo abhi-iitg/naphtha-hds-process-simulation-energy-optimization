@@ -1,0 +1,11 @@
+=== BASELINE ===
+Product sulfur: 1.4740 ppm
+Sulfur removal: 99.9868%
+Fresh H2: 4.8225 kmol/h
+Heat recovered: 2034.877 MJ/h
+LMTD: 21.978 C
+HX area: 102.872 m2
+Furnace duty: 171.402 MJ/h
+
+=== BEST FEASIBLE GRID POINT ===
+{'reactor_temperature_c': 320, 'thiophene_conversion': 0.999, 'benzothiophene_conversion': 0.9994, 'sulfur_ppm': 9.73959394271914, 'sulfur_removal_pct': 99.91279323662683, 'furnace_duty_mj_h': 168.37347213729282, 'hx_area_m2': 93.07924331235472, 'heat_recovery_saving_pct': 91.55064619711538}

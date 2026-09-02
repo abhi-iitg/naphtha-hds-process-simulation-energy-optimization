@@ -1,0 +1,23 @@
+metric,value,unit
+Feed,3000.0,kg/h
+Reactor temperature,350.0,°C
+Reactor pressure,40.0,bar
+Fresh H2,4.822536587714116,kmol/h
+H2 consumed,3.858029270171293,kmol/h
+H2S produced,1.048323154080425,kmol/h
+Sulfur in,33.613676756795726,kg/h
+Sulfur out,0.0044364369772982686,kg/h
+Product sulfur,1.4740353536727109,ppm
+Sulfur removal,99.9868016908433,%
+Heat recovered,2034.8768936716144,MJ/h
+LMTD,21.978484371369447,°C
+HX area,102.8721675297629,m²
+Furnace duty,171.40176859015222,MJ/h
+Heat recovery saving,92.23118223812942,%
+Catalyst bed volume,1.4285714285714286,m³
+Gross reactor volume,2.380952380952381,m³
+Screened line ΔP,0.010180954906504523,kPa
+H2 compressor power screen,10.073348308260083,kW
+Annual fuel saving,325580.30298745836,kg/y
+Annual fuel-cost saving,179069.1666431021,USD/y
+Annual CO2 reduction,1025577.9544104938,kg/y

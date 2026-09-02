@@ -1,0 +1,6 @@
+component,mass_fraction,flow_kg_h
+n_hexane,0.350,1050.0
+n_heptane,0.300,900.0
+n_octane,0.315,945.0
+thiophene,0.020,60.0
+benzothiophene,0.015,45.0
