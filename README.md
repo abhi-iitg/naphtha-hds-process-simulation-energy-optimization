@@ -218,7 +218,7 @@ The repository also generates a process-flow figure at:
 
 ---
 
-# ⚙️ Engineering Methodology
+# Engineering Methodology
 
 ## Feed Basis
 
