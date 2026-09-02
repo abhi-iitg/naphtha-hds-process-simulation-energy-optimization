@@ -1,29 +1,58 @@
 # Naphtha HDS Process Simulation & Energy Optimization
 
-**Chemical Engineering | Refinery Process Design | Heat Integration | Engineering Economics | Python**
+**Chemical Engineering | Refinery Process Design | Heat Integration | Engineering Economics | Python | Streamlit**
 
-A reproducible screening model of a representative **3,000 kg/h naphtha
-hydrodesulfurization (HDS)** unit. The project combines component material
-balances, hydrogen demand, sulfur specification, process-to-process heat
-recovery, LMTD/exchanger-area screening, utility and CO2 estimates, reactor
-volume screening, pressure-drop screening, sensitivity analysis, and bounded
-operating optimization.
+A reproducible screening model of a representative **3,000 kg/h naphtha hydrodesulfurization (HDS)** unit. The project combines component material balances, hydrogen demand, sulfur specification, process-to-process heat recovery, LMTD/exchanger-area screening, utility and CO2 estimates, reactor-volume screening, pressure-drop screening, sensitivity analysis, and bounded operating optimization.
+
+## Live Interactive Demo
+
+The repository includes a Streamlit application in `streamlit_app.py` for interactive exploration of:
+
+- reactor temperature and sulfur-species conversion inputs
+- product sulfur and sulfur-removal KPIs
+- fresh H2 demand and H2S generation
+- heat recovery, LMTD and exchanger-area screening
+- reactor volume, pressure-drop and compressor-power screens
+- reactor-temperature sensitivity plots
+- deterministic constrained optimization against the **≤10 ppm** sulfur target
+
+### Run locally
+
+```bash
+python -m venv .venv
+
+# Windows
+.venv\Scripts\activate
+
+# Linux/macOS
+source .venv/bin/activate
+
+pip install -r requirements.txt
+python -m pytest -q
+streamlit run streamlit_app.py
+```
+
+The browser application should open at the local Streamlit address shown in the terminal.
+
+## Deploy on Streamlit Community Cloud
+
+1. Push the complete repository to GitHub.
+2. Open Streamlit Community Cloud and sign in with GitHub.
+3. Create a new app and select this repository.
+4. Set the branch to `main`.
+5. Set **Main file path** to `streamlit_app.py`.
+6. In Advanced settings, select **Python 3.12** if a Python version selector is available.
+7. Deploy the app.
+
+After deployment, test the default case, change reactor temperature/conversions, and run the constrained optimizer before adding the live URL to a resume.
 
 ## Engineering workflow
 
-Feed assay → material balance → HDS stoichiometry → H2 demand → reactor-volume
-screen → heat recovery → LMTD/area → furnace duty → utility/CO2 screen →
-sensitivity → constrained optimization.
+Feed assay → material balance → HDS stoichiometry → H2 demand → reactor-volume screen → heat recovery → LMTD/area → furnace duty → utility/CO2 screen → sensitivity → constrained optimization.
 
 ## Scope and honesty
 
-This is a **license-free engineering screening model**, not a refinery
-licensing package and not an Aspen Plus file. It intentionally uses a
-transparent surrogate naphtha, constant heat capacities, specified HDS
-conversions, and explicit screening assumptions. A real industrial design
-would require rigorous VLE, pseudocomponent assay, catalyst kinetics,
-deactivation, reactor hydraulics, recycle convergence, detailed exchanger
-design, equipment sizing, safety studies, and validated plant data.
+This is a **license-free engineering screening model**, not a refinery licensing package and not an Aspen Plus file. It intentionally uses a transparent surrogate naphtha, constant heat capacities, specified HDS conversions, and explicit screening assumptions. A real industrial design would require rigorous VLE, pseudocomponent assay, catalyst kinetics, deactivation, reactor hydraulics, recycle convergence, detailed exchanger design, equipment sizing, safety studies, and validated plant data.
 
 ## Default design basis
 
@@ -48,19 +77,17 @@ design, equipment sizing, safety studies, and validated plant data.
 
 `C8H6S + 3 H2 -> C8H10 + H2S`
 
-## Run
+## Validation
+
+Run the automated test suite:
 
 ```bash
-python -m venv .venv
-
-# Windows
-.venv\Scripts\activate
-
-# Linux/macOS
-source .venv/bin/activate
-
-pip install -r requirements.txt
 python -m pytest -q
+```
+
+Run the deterministic report generator:
+
+```bash
 python -m src.reporting
 ```
 
@@ -70,6 +97,7 @@ The report regenerates CSV results and PNG figures.
 
 ```text
 ├── README.md
+├── streamlit_app.py
 ├── requirements.txt
 ├── LICENSE
 ├── src/
@@ -92,20 +120,10 @@ The report regenerates CSV results and PNG figures.
 
 ## Suggested CV entry
 
-**Naphtha HDS Process Simulation & Energy Optimization | Python**
+**Naphtha HDS Process Simulation & Energy Optimization | Python, Streamlit**
 
-- Developed a component-level steady-state HDS model for a **3,000 kg/h**
-  representative naphtha feed, quantifying sulfur conversion, hydrogen
-  demand and H₂S generation through stoichiometric reaction balances.
-- Designed a screening heat-integration calculation using **LMTD, minimum
-  temperature approach and exchanger-area estimation** to quantify recoverable
-  reactor-effluent heat and residual furnace duty.
-- Performed constrained sensitivity/optimization over reactor temperature and
-  sulfur-species conversion, enforcing a **≤10 ppm calculated sulfur target**
-  and thermal/equipment feasibility checks.
+- Developed a component-level steady-state HDS model for a **3,000 kg/h** representative naphtha feed, quantifying sulfur conversion, hydrogen demand and H2S generation through stoichiometric reaction balances.
+- Designed a screening heat-integration calculation using **LMTD, minimum temperature approach and exchanger-area estimation** to quantify recoverable reactor-effluent heat and residual furnace duty.
+- Performed constrained sensitivity/optimization over reactor temperature and sulfur-species conversion, enforcing a **≤10 ppm calculated sulfur target** and thermal/equipment feasibility checks; exposed the workflow through an interactive Streamlit dashboard.
 
 Use only numbers generated by this repository in the final CV.
-
-## Reference landscape
-
-See [docs/references.md](docs/references.md) for the public repositories used only as scope/architecture benchmarks.
