@@ -4,6 +4,14 @@
 
 A reproducible screening model of a representative **3,000 kg/h naphtha hydrodesulfurization (HDS)** unit. The project combines component material balances, hydrogen demand, sulfur specification, process-to-process heat recovery, LMTD/exchanger-area screening, utility and CO2 estimates, reactor-volume screening, pressure-drop screening, sensitivity analysis, and bounded operating optimization.
 
+## 🚀 Live Demo
+
+[Launch Interactive HDS Simulator](https://naphtha-hds-process-simulation-energy-optimization-abhi-iitg.streamlit.app/)
+
+An interactive Streamlit interface for exploring the HDS material balance,
+heat integration, equipment screening, sensitivity analysis, and constrained
+operating optimization.
+
 ## Live Interactive Demo
 
 The repository includes a Streamlit application in `streamlit_app.py` for interactive exploration of:
