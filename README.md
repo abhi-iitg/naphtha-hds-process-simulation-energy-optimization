@@ -82,7 +82,7 @@ operating optimization.
     - [Priority 5 — Hydrogen system](#priority-5-hydrogen-system)
     - [Priority 6 — Economic optimization](#priority-6-economic-optimization)
     - [Priority 7 — Digital engineering interface](#priority-7-digital-engineering-interface)
-- [👤 Author](#-author)
+- [Author](#author)
 - [License](#license)
 - [Engineering takeaway](#engineering-takeaway)
 ---
@@ -944,7 +944,7 @@ The next level of the project would move from a transparent screening model towa
 
 ---
 
-# 👤 Author
+# Author
 
 **Abhishek Kumar Gond**
 
