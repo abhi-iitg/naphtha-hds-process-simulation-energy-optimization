@@ -1,6 +1,6 @@
 # Naphtha HDS Process Simulation & Energy Optimization
 
-**Chemical Engineering | Refinery Process Design | Heat Integration | Engineering Economics | Python | GitHub | Live Demo
+Chemical Engineering | Refinery Process Design | Heat Integration | Engineering Economics | Python | GitHub | Live Demo
 
 A reproducible screening model of a representative **3,000 kg/h naphtha hydrodesulfurization (HDS)** unit. The project combines component material balances, hydrogen demand, sulfur specification, process-to-process heat recovery, LMTD/exchanger-area screening, utility and CO2 estimates, reactor-volume screening, pressure-drop screening, sensitivity analysis, and bounded operating optimization.
 
