@@ -952,7 +952,6 @@ IIT Guwahati
 Chemical Engineering
 
 - **Email : mr.abhishekaaa@gmail.com**
-- **[Portfolio]()**
 - **[LinkedIn](https://www.linkedin.com/in/abhishekkumargond/)**
 
 ---
