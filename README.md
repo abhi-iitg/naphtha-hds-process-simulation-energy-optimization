@@ -948,8 +948,8 @@ The next level of the project would move from a transparent screening model towa
 
 **Abhishek Kumar Gond**
 
-IIT Guwahati  
-Chemical Engineering
+B.Tech in Chemical Engineering @ IIT Guwahati
+  
 
 - **Email : mr.abhishekaaa@gmail.com**
 - **[LinkedIn](https://www.linkedin.com/in/abhishekkumargond/)**
